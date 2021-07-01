@@ -32,6 +32,12 @@ export const alertFillRequest = () => {swal({
   icon: "error",
   button: "Ok",
 });}
+export const alertError_login = () => {swal({
+  title: "Your Email or password is wrong ",
+  text: "Pleas try again!",
+  icon: "error",
+  button: "Ok",
+});}
 export const alertErrorVerify = () => {swal({
   title: "Email not verified!",
   text: "Pleas verify your email!",

@@ -74,7 +74,11 @@ loginBtn.onclick = () => {
             _.alertErrorVerify();
         }
     })
-    // .cath((error) =>{
-    //     _.alertError_Email(`${error.code} - ${error.message}`)
-    // })
+    .catch((error) => {
+        let errorCode = error.code;
+        let errorMessage = error.message;
+        _.alertError_login().title = errorCode;
+        _.alertError_login().text = errorMessage;
+        _.alertError_login()
+    })
 }
