@@ -45,7 +45,12 @@ signUpBtn.onclick = () => {
         return firebaseDB.auth().currentUser.sendEmailVerification();
     })
     .then(() => {
-        _.alertSuccess_signUp()
+        sign_email.value="";
+        sign_pass.value="";
+        re_sign_pass.value="";
+        _.alertSuccess_signUp();
+        $("#login-group").show(500);
+        $("#signUp-group").hide(500);
     })
     .catch((error) => {
         let errorCode = error.code;
@@ -75,6 +80,8 @@ loginBtn.onclick = () => {
         }
     })
     .catch((error) => {
+        login_email.value="";
+        login_pass.value= "";
         let errorCode = error.code;
         let errorMessage = error.message;
         _.alertError_login().title = errorCode;
