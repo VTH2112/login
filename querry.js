@@ -1,3 +1,4 @@
+import * as _ from './firebase_js/alert.js'
 
 $(document).ready(function () {
     $("#signUp-show").click(function () {
@@ -8,7 +9,8 @@ $(document).ready(function () {
         $("#login-group").show(500);
         $("#signUp-group").hide(500);
     });
-    $("#loginBtn").click(function () {
-        swal("Good job!", "You clicked the button!", "success");
-    })
+    // $("#loginBtn").click(function () {
+    //     _.alertSuccess()
+    // });
 });
+

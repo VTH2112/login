@@ -33,11 +33,11 @@
                                 <div class="login-group" id="login-group">
                                     <div class="text-box">
                                         <span class="icon-log"><i class="fa fa-user fa-2x" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" placeholder="UserName">
+                                        <input type="email" class="form-control" placeholder="Email" id="loginEmail">
                                     </div>
                                     <div class="text-box">
                                         <span class="icon-log"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" placeholder="Password">
+                                        <input type="password" class="form-control" placeholder="Password" id="loginPassword">
                                     </div>
                                     <p class="text-right pt-3">Forgot Password ?</p>
                                     <div class="form-check-inline pl-3 pb-3" style="width:100%">
@@ -73,15 +73,15 @@
                                 <div class="signUp-group" id="signUp-group" style="display:none">
                                     <div class="text-box">
                                         <span class="icon-log"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" placeholder="Email" id="sign-email">
+                                        <input type="email" class="form-control" placeholder="Email" id="sign-email">
                                     </div>
                                     <div class="text-box">
                                         <span class="icon-log"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" placeholder="Password" id="sign-password">
+                                        <input type="password" class="form-control" placeholder="Password" id="sign-password">
                                     </div>
                                     <div class="text-box">
                                         <span class="icon-log"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></span>
-                                        <input type="text" class="form-control" placeholder="Password" id="sign-re-password">
+                                        <input type="password" class="form-control" placeholder="Password" id="re-sign-password">
                                     </div>
                                     <div class="d-flex justify-content-center mb-3 pt-5">
                                         <button type="button" class="btn btn-primary btn-lg justify-content-center text-uppercase"
@@ -106,15 +106,16 @@
             </div>
         </div>
     </div>
-
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
     <!-- __________________________________________________________________________ -->
     <script defer src="./firebase_js/FB.js" type="module"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./firebase_js/index.js" type="module"></script>
-    <script src="querry.js"></script>
-    <script src="querry.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script src="./firebase_js/alert.js" type="module"></script> -->
+    <script src="querry.js" type="module"></script>
 </body>
 
 </html>
