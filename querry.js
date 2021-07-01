@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $("#signUp-show").click(function () {
         $("#login-group").hide(500);
@@ -7,4 +8,7 @@ $(document).ready(function () {
         $("#login-group").show(500);
         $("#signUp-group").hide(500);
     });
+    $("#loginBtn").click(function () {
+        swal("Good job!", "You clicked the button!", "success");
+    })
 });

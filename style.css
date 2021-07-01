@@ -18,16 +18,19 @@ body {
     background-attachment: fixed;
 
 }
-
+.bd-card{
+display: flex;
+justify-content: center;
+}
 .bg-ots {
     background-color: #A9C9FF;
     background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
-
     opacity: 0.2;
+    height: auto;
 }
 
 .bg-t {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
 }
@@ -66,15 +69,25 @@ i {
 .icon-log {
     width: 45px;
     height: 37px;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    justify-content: center;
 }
 
-.fa {
-    padding: 10px;
-    font-size: 28px;
-    width: 50px;
+    .fa-facebook {
+    padding: 13px 18px 13px 18px;
+    font-size: 20px !important;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 50% !important;
+}
+.fa-google{
+    padding: 13px 16px 13px 16px;
+    font-size: 20px !important;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50% !important;
 }
 
 .fa-facebook {
